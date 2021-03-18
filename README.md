@@ -19,11 +19,11 @@ other IDE integrations.
 
        python /path/to/here/makeitso.py
 
+1. I'm not sure this latter integration works yet. (I think Builder doesn't like
+   a daemon launching). In any case, the following won't break anything.
 1. Restart GNOME Builder, if already open. (It doesn't seem to pick up on new
    Podman containers otherwise.)
 1. Open the "Switch Surface" menu (top left).
 1. "Build Preferences"
 1. Application Runtime > All Runtimes > Containers > Podman > $YourProject
-1. It's sometimes useful to list the listeners:
 
-       ss --listening
