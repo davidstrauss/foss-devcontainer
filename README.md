@@ -12,15 +12,16 @@ other IDE integrations.
 
        flatpak install flathub org.gnome.Builder
 
-1. Set up a [Toolbox](https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/).
-
-       toolbox create
-
 ### Usage
 
+1. In the CLI, change to the parent directory of `.devcontainer`.
+1. Run the utility (which will *delete* any container with the same name as your project directory):
+
+       python /path/to/here/makeitso.py
+
+1. Restart GNOME Builder, if already open. (It doesn't seem to pick up on new
+   Podman containers otherwise.)
 1. Open the "Switch Surface" menu (top left).
-1.
+1. "Build Preferences"
+1. Application Runtime > All Runtimes > Containers > Podman > $YourProject
 
-## Resources
-
-https://github.com/containers/buildah/issues/2404
