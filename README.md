@@ -24,4 +24,6 @@ other IDE integrations.
 1. Open the "Switch Surface" menu (top left).
 1. "Build Preferences"
 1. Application Runtime > All Runtimes > Containers > Podman > $YourProject
+1. It's sometimes useful to list the listeners:
 
+       ss --listening
